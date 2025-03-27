@@ -56,7 +56,7 @@ const ViewProduct = ({ show,handleClose, data }) => {
                 <b className='ms-4'>ຂໍອະໄພທີ່ບໍ່ສະດວກໃນການສັ່ງຊື້ ທອງຄຳຮູບປະພັນໄດ້,  ແຕ່ທ່ານສາມາສັ່ງຊື້ທອງຄຳແທງໄດ້ຜ່ານເວັບໄຊຂອງພວກເຮົາໄດ້
                   <br />
                   <br />
-                  <Link to={'/ordering'} > <i class="fa-solid fa-hand-point-right"></i> ກົດສັ່ງຊື່ທອງຄຳຮູບປະພັນ</Link>
+                  <Link to={'/ordering'} > <i className="fa-solid fa-hand-point-right"></i> ກົດສັ່ງຊື່ທອງຄຳຮູບປະພັນ</Link>
                 </b>
               </p>
             </div>

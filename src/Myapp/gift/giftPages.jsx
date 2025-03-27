@@ -194,9 +194,9 @@ function GiftPages() {
                 <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered >
                     <Modal.Body className='p-0 '>
                         <div className='rounded container-view '>
-                            <div className='view-top-right' ><a href="javscript:;" onClick={handleClose}><i class="fa-solid fa-circle-xmark text-red fs-20px" /></a> </div>
+                            <div className='view-top-right' ><a href="javscript:;" onClick={handleClose}><i className="fa-solid fa-circle-xmark text-red fs-20px" /></a> </div>
                             <img src={images} className='rounded' alt="" />
-                            <div class="centered text-dark">{tileName}</div>
+                            <div className="centered text-dark">{tileName}</div>
                         </div>
                     </Modal.Body>
                 </Modal>

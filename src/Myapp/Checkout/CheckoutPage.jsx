@@ -186,22 +186,22 @@ function CheckoutPage() {
                 <form onSubmit={handleSubmit}>
                     <div className="row">
                         <div className="col-sm-7">
-                            <div class="mt-2 space-y-2 border border-gray-400 bg-white p-3 text-sm">
-                                <div class="text-lg font-semibold mb-4">1. ລາຍລະອຽດລູກຄ້າ</div>
+                            <div className="mt-2 space-y-2 border border-gray-400 bg-white p-3 text-sm">
+                                <div className="text-lg font-semibold mb-4">1. ລາຍລະອຽດລູກຄ້າ</div>
                                 <div className="row mb-1">
-                                    <label htmlFor="" className='col-sm-4 form-label text-lg-end'>ຊື່ລູກຄ້າ <span class="text-danger">*</span></label>
+                                    <label htmlFor="" className='col-sm-4 form-label text-lg-end'>ຊື່ລູກຄ້າ <span className="text-danger">*</span></label>
                                     <div className="col-sm-8">
-                                        <input class="form-control rounded " type="text" value={values.cus_fname} onChange={(e) => handleChange('cus_fname', e.target.value)} placeholder='ຊື່ລູກຄ້າ /First Name' required />
+                                        <input className="form-control rounded " type="text" value={values.cus_fname} onChange={(e) => handleChange('cus_fname', e.target.value)} placeholder='ຊື່ລູກຄ້າ /First Name' required />
                                     </div>
                                 </div>
                                 <div className="row mb-1">
-                                    <label htmlFor="" className='col-sm-4 form-label text-lg-end'>ນາມສະກຸນ <span class="text-danger">*</span></label>
+                                    <label htmlFor="" className='col-sm-4 form-label text-lg-end'>ນາມສະກຸນ <span className="text-danger">*</span></label>
                                     <div className="col-sm-8">
-                                        <input class="form-control rounded " type="text" value={values.cus_lname} onChange={(e) => handleChange('cus_lname', e.target.value)} placeholder='ນາມສະກຸນ / Last Name' required />
+                                        <input className="form-control rounded " type="text" value={values.cus_lname} onChange={(e) => handleChange('cus_lname', e.target.value)} placeholder='ນາມສະກຸນ / Last Name' required />
                                     </div>
                                 </div>
                                 <div className="row mb-1">
-                                    <label htmlFor="" className='col-sm-4 form-label text-lg-end'> ໂທລະສັບຫຼັກ /Primary Phone <span class="text-danger">*</span></label>
+                                    <label htmlFor="" className='col-sm-4 form-label text-lg-end'> ໂທລະສັບຫຼັກ /Primary Phone <span className="text-danger">*</span></label>
                                     <div className="col-sm-8">
                                         <div className="input-group">
 
@@ -225,19 +225,19 @@ function CheckoutPage() {
                                 <div className="row mb-1">
                                     <label htmlFor="" className='col-sm-4 form-label text-lg-end'>  ອີເມວ /Email address</label>
                                     <div className="col-sm-8">
-                                        <input type='text' class="form-control" value={values.email} onChange={(e) => handleChange('email', e.target.value)} placeholder='***@gmail.com' />
+                                        <input type='text' className="form-control" value={values.email} onChange={(e) => handleChange('email', e.target.value)} placeholder='***@gmail.com' />
                                     </div>
                                 </div>
                                 <div className="row mb-1">
-                                    <label htmlFor="" className='col-sm-4 form-label text-lg-end'> ເລກບັດປະຈຳຕົວ /ID card number <span class="text-danger">*</span></label>
+                                    <label htmlFor="" className='col-sm-4 form-label text-lg-end'> ເລກບັດປະຈຳຕົວ /ID card number <span className="text-danger">*</span></label>
                                     <div className="col-sm-8">
-                                        <input type='text' class="form-control " value={values.card_number} onChange={(e) => handleChange('card_number', e.target.value)} placeholder='ເລກບັດປະຈຳຕົວ' required />
+                                        <input type='text' className="form-control " value={values.card_number} onChange={(e) => handleChange('card_number', e.target.value)} placeholder='ເລກບັດປະຈຳຕົວ' required />
                                     </div>
                                 </div>
                                 <div className="row mb-1">
                                     <label htmlFor="" className='col-sm-4 form-label text-lg-end'>ແຂວງ / Porvince</label>
                                     <div className="col-sm-8">
-                                        <select type='text' class="form-control" onChange={(e) => handleShowDist(e.target.value)} >
+                                        <select type='text' className="form-control" onChange={(e) => handleShowDist(e.target.value)} >
                                             <option value={''}>ເລືອກແຂວງ</option>
                                             {itemProvince.map(province => (
                                                 <option key={province.province_id} value={province.province_id}>
@@ -250,7 +250,7 @@ function CheckoutPage() {
                                 <div className="row mb-1">
                                     <label htmlFor="" className='col-sm-4 form-label text-lg-end'>ເມືອງ / District</label>
                                     <div className="col-sm-8">
-                                        <select type='text' class="form-control " value={values.district_id_fk} onChange={(e) => handleChange('district_id_fk', e.target.value)} >
+                                        <select type='text' className="form-control " value={values.district_id_fk} onChange={(e) => handleChange('district_id_fk', e.target.value)} >
                                             <option value={''}>ເລືອກເມືອງ</option>
                                             {itemDistrict.map(item => (
                                                 <option key={item.district_id} value={item.district_id}>
@@ -263,20 +263,20 @@ function CheckoutPage() {
                                 <div className="row mb-1">
                                     <label htmlFor="" className='col-sm-4 form-label text-lg-end'>ບ້ານ / Villages</label>
                                     <div className="col-sm-8">
-                                        <input type='text' class="form-control " value={values.villageName} onChange={(e) => handleChange('villageName', e.target.value)} placeholder='ບ້ານ / Villages' />
+                                        <input type='text' className="form-control " value={values.villageName} onChange={(e) => handleChange('villageName', e.target.value)} placeholder='ບ້ານ / Villages' />
                                     </div>
                                 </div>
                                 <div className="row mb-1">
                                     <label htmlFor="" className='col-sm-4 form-label text-lg-end'>ໝາຍເຫດ / Description</label>
                                     <div className="col-sm-8">
-                                        <textarea type='text' class="form-control " value={values.cus_remark} onChange={(e) => handleChange('cus_remark', e.target.value)} placeholder='ໝາຍເຫດ /Remark' />
+                                        <textarea type='text' className="form-control " value={values.cus_remark} onChange={(e) => handleChange('cus_remark', e.target.value)} placeholder='ໝາຍເຫດ /Remark' />
                                     </div>
                                 </div>
                                 <div className="row mb-1">
                                     <label htmlFor="" className='col-sm-4 form-label text-lg-end'>ເອກະສານ</label>
                                     <div className="col-sm-8">
-                                        <input type='file' class="form-control " onChange={handleSelectFile} accept="image/*" />
-                                        <p class="form-text mb-0 fs-12px text-muted f-w-600 mt-10px">ອັບໂຫລດຮູບບັດປະຈຳຕົວ ຫຼື ໜັງສືຜ່ານແດນ  /Upload a photo of your ID or passport</p>
+                                        <input type='file' className="form-control " onChange={handleSelectFile} accept="image/*" />
+                                        <p className="form-text mb-0 fs-12px text-muted f-w-600 mt-10px">ອັບໂຫລດຮູບບັດປະຈຳຕົວ ຫຼື ໜັງສືຜ່ານແດນ  /Upload a photo of your ID or passport</p>
                                     </div>
                                 </div>
                             </div>
@@ -290,10 +290,10 @@ function CheckoutPage() {
                         </div>
 
                         <div className="col-sm-5">
-                            <div class="w-full mt-2">
-                                <div class="space-y-2 border border-gray-400 bg-white p-2 text-sm">
-                                    <h1 class="border-b border-gray-400 pb-2 text-base font-semibold fs-22px"> I ຂໍ້ມູນການສັ່ງຊື້ທອງຄຳ</h1>
-                                    <div class=" flex-row w-full">
+                            <div className="w-full mt-2">
+                                <div className="space-y-2 border border-gray-400 bg-white p-2 text-sm">
+                                    <h1 className="border-b border-gray-400 pb-2 text-base font-semibold fs-22px"> I ຂໍ້ມູນການສັ່ງຊື້ທອງຄຳ</h1>
+                                    <div className=" flex-row w-full">
                                         <div> ! ສະບາຍດີລູກຄ້າທຸກທ່ານ ໃນຄະນະນີ້ທ່ານສາມາດຊື້ໄດ້ສະເພາະ ທອງຄຳແທ່ງເທົ່ານັ້ນ </div>
                                         <div className="text-orange">ສ່ວນຄຳຮູບປະພັນ ພວກເຮົາຈະໃຫ້ບໍລິການຊື້ທອງຄຳທີ່ເປັນຮູບປະພັນໄດ້ໄວໆນີ້</div>
                                     </div>
@@ -313,7 +313,7 @@ function CheckoutPage() {
                                             <p className='fs-16px'>ນ້ຳໜັກ: {price.grams} / g</p>
                                         </div>
                                         <div className="col-sm-12 mt-4">
-                                            <div class="p-3 text-center border-2 border-gold bg-black  text-gold fs-22px rounded-pill">
+                                            <div className="p-3 text-center border-2 border-gold bg-black  text-gold fs-22px rounded-pill">
                                                 {numeral(values.balance_gold).format('0,0.00')} ₭
                                             </div>
                                         </div>
@@ -337,25 +337,25 @@ function CheckoutPage() {
                                                 </div>
                                             )}
                                             <div className="form-group mb-2 mt-4">
-                                                <label htmlFor="" className='form-label'>ຊື່ບັນຊີ <span class="text-danger">*</span></label>
+                                                <label htmlFor="" className='form-label'>ຊື່ບັນຊີ <span className="text-danger">*</span></label>
                                                 <input type="text" className='form-control' onChange={(e) => handleChange('cardholder_name', e.target.value)} placeholder='ຊື່ຜູ້ຖືບັດ /Cardholder Name' required />
                                             </div>
                                             <div className="form-group mb-2">
-                                                <label htmlFor="" className='form-label'>ເລກບັນຊີ <span class="text-danger">*</span></label>
+                                                <label htmlFor="" className='form-label'>ເລກບັນຊີ <span className="text-danger">*</span></label>
                                                 <input type="text" className='form-control' onChange={(e) => handleChange('transfer_number', e.target.value)} placeholder='XXX-XXXX-XXXX' required />
                                             </div>
                                             <div className="row">
                                                 <div className="form-group col-12 mb-2">
-                                                    <label htmlFor="" className='form-label'>ວັນທີຊຳລະ <span class="text-danger">*</span></label>
+                                                    <label htmlFor="" className='form-label'>ວັນທີຊຳລະ <span className="text-danger">*</span></label>
                                                     <input type="datetime-local" value={moment(values.date_transfer).format('YYYY-MM-DD hh:mm:ss')} onChange={(e) => handleChange('date_transfer', e.target.value)} className='form-control' required />
                                                 </div>
                                                 <div className="form-group col-12 mb-2">
-                                                    <label class="form-label">ໝາຍເຫດ <span class="text-danger">*</span></label>
-                                                    <textarea rows={2} onChange={(e) => handleChange('pays_remark', e.target.value)} placeholder='ໝາຍເຫດ.....' class="form-control required " required />
+                                                    <label className="form-label">ໝາຍເຫດ <span className="text-danger">*</span></label>
+                                                    <textarea rows={2} onChange={(e) => handleChange('pays_remark', e.target.value)} placeholder='ໝາຍເຫດ.....' className="form-control required " required />
                                                 </div>
                                                 <div className="form-group  col-12 mb-2">
                                                     <label htmlFor="" className='form-label'>ສະລິບການໂອນ</label>
-                                                    <input type="file" accept="image/*" onChange={handleFilePayment} class="form-control" required />
+                                                    <input type="file" accept="image/*" onChange={handleFilePayment} className="form-control" required />
                                                 </div>
                                                 <button type='summit' className='btn btn-primary w-100 mt-3'>ຢືນຢັນການສັ່ງຊື້</button>
                                             </div>

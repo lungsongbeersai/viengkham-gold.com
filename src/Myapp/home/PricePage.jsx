@@ -55,29 +55,29 @@ function PricePage() {
     }, [active])
     return (
         <>
-            <div class="mx-auto mt-3 max-w-7xl space-y-5 px-2 xl:px-0">
-                <div class="flex items-center justify-between text-sm font-medium">
+            <div className="mx-auto mt-3 max-w-7xl space-y-5 px-2 xl:px-0">
+                <div className="flex items-center justify-between text-sm font-medium">
                     <div>
                         <Link to={'/'} ><span className='text-red fs-20px'><i className="fas fa-chevron-left"></i></span><span className='fs-18px text-dark'> ລາຍການລາຄາທຳຄຳປະຈຳວັນ</span>
                         </Link>
                     </div>
-                    {/* <div class="space-x-2 font-normal sm:space-x-6">
-                        <span class="cursor-pointer hover:underline">Email us</span>
-                        <span class="cursor-pointer hover:underline">Share</span>
-                        <span class="cursor-pointer hover:underline">Print</span>
+                    {/* <div className="space-x-2 font-normal sm:space-x-6">
+                        <span className="cursor-pointer hover:underline">Email us</span>
+                        <span className="cursor-pointer hover:underline">Share</span>
+                        <span className="cursor-pointer hover:underline">Print</span>
                     </div> */}
                 </div>
             </div>
 
-            <div class="mx-auto max-w-7xl p-2">
-                <div class="mt-3  w-full space-x-2 overflow-x-auto pb-3">
+            <div className="mx-auto max-w-7xl p-2">
+                <div className="mt-3  w-full space-x-2 overflow-x-auto pb-3">
                     <div className="row ">
                         <div className="col-lg-6 col-md-6 col-sm-6 mb-2">
                             <div className="panel border-prices border border-danger border-top-0">
                                 <div className="panel-heading bg-viengkham text-center border-b-0 py-1">
                                     <h4 className="panel-title fs-14px wrapper">
-                                        <div class="bg">ລາຄາຄຳປະຈຳວັນ </div>
-                                        <div class="fg">ລາຄາຄຳປະຈຳວັນ </div>
+                                        <div className="bg">ລາຄາຄຳປະຈຳວັນ </div>
+                                        <div className="fg">ລາຄາຄຳປະຈຳວັນ </div>
                                     </h4>
                                 </div>
                                 <div className="">
@@ -90,8 +90,8 @@ function PricePage() {
                                 <div className="panel panel-inverse border-prices mb-1 border border-danger border-top-0 " key={index}>
                                     <div className="panel-heading bg-viengkham text-center border-b-0 py-1">
                                         <h4 className="panel-title wrapper fs-16px">
-                                            <div class="bg"> ລາຄາ {item.typeName} ວັນນີ້ </div>
-                                            <div class="fg"> ລາຄາ {item.typeName} ວັນນີ້ </div>
+                                            <div className="bg"> ລາຄາ {item.typeName} ວັນນີ້ </div>
+                                            <div className="fg"> ລາຄາ {item.typeName} ວັນນີ້ </div>
 
                                         </h4>
                                     </div>
@@ -128,7 +128,7 @@ function PricePage() {
                     <div className='font-medium fs-20px px-2 mb-3'>ປະຫວັດການອັບເດດລາຄາຊື້ຂາຍປະຈຳວັນ</div>
                    
                     <h4 className="section-titles fs-16px"><span className={`me-3 ${active === 1 ? '' : 'bg-gold text-dark'}`} onClick={() => handleType(1)} role='button'>ອັບເດດລາຄາຊື້ຂາຍຄຳ ຮູບປະພັນ</span> <span className={`me-3 ${active === 2 ? '' : 'bg-gold text-dark'}`} onClick={() => handleType(2)} role='button'>ອັບເດດລາຄາຊື້ຂາຍຄຳແທ່ງ</span></h4>
-                    <div class="table-responsive">
+                    <div className="table-responsive">
                     <table className='table table-striped table-bordered align-middle text-nowrap'>
                         <thead className='thead-bg-vgk '>
                             <tr className=''>

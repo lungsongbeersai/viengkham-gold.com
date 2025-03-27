@@ -232,32 +232,32 @@ const handleCheck = (event) => {
                 </div>
               )}
               <div className="form-group mb-2 mt-4">
-                <label htmlFor="" className='form-label'>ຊື່ບັນຊີ <span class="text-danger">*</span></label>
+                <label htmlFor="" className='form-label'>ຊື່ບັນຊີ <span className="text-danger">*</span></label>
                 <input type="text" className='form-control' onChange={(e) => handleChange('cardholder_name', e.target.value)} placeholder='ຊື່ຜູ້ຖືບັດ /Cardholder Name' required />
               </div>
               <div className="form-group mb-2">
-                <label htmlFor="" className='form-label'>ເລກບັນຊີ <span class="text-danger">*</span></label>
+                <label htmlFor="" className='form-label'>ເລກບັນຊີ <span className="text-danger">*</span></label>
                 <input type="text" className='form-control' onChange={(e) => handleChange('transfer_number', e.target.value)} placeholder='XXX-XXXX-XXXX' required />
               </div>
               <div className="row">
                 <div className="form-group col-12 mb-2">
-                  <label htmlFor="" className='form-label'>ວັນທີຊຳລະ <span class="text-danger">*</span></label>
+                  <label htmlFor="" className='form-label'>ວັນທີຊຳລະ <span className="text-danger">*</span></label>
                   <input type="datetime-local" value={moment(values.date_transfer).format('YYYY-MM-DD hh:mm:ss')} onChange={(e) => handleChange('date_transfer', e.target.value)} className='form-control' required />
                 </div>
                 <div className="form-group col-12 mb-2">
-                  <label class="form-label">ໝາຍເຫດ <span class="text-danger">*</span></label>
-                  <textarea rows={2} onChange={(e) => handleChange('pays_remark', e.target.value)} placeholder='ໝາຍເຫດ.....' class="form-control required " required />
+                  <label className="form-label">ໝາຍເຫດ <span className="text-danger">*</span></label>
+                  <textarea rows={2} onChange={(e) => handleChange('pays_remark', e.target.value)} placeholder='ໝາຍເຫດ.....' className="form-control required " required />
                 </div>
                 <div className="form-group  col-12 mb-2">
                   <label htmlFor="" className='form-label'>ສະລິບການໂອນ</label>
-                  <input type="file" accept="image/*" onChange={handleFilePayment} class="form-control" required />
+                  <input type="file" accept="image/*" onChange={handleFilePayment} className="form-control" required />
                 </div>
                 <div className="form-group row">
                   <div className="col-sm-8">
-                <div class="mb-4 flex items-center mt-4">
+                <div className="mb-4 flex items-center mt-4">
                     <input type="checkbox" onChange={handleCheck}
-                      class="focus:ring-blue-500 text-primary h-4 w-4 " />
-                    <label  class="ml-3 text-sm font-medium text-gray-900" >ກວດສອບ ຂໍ້ມູນຂອງທ່ານຖຶກຕ້ອງແລ້ວບໍ່ </label>
+                      className="focus:ring-blue-500 text-primary h-4 w-4 " />
+                    <label  className="ml-3 text-sm font-medium text-gray-900" >ກວດສອບ ຂໍ້ມູນຂອງທ່ານຖຶກຕ້ອງແລ້ວບໍ່ </label>
                   </div>
                   </div>
                   <div className="col-sm-4">

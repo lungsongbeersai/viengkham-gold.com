@@ -164,7 +164,7 @@ const token=localStorage.getItem('token');
                     </li>
                     <li className="nk-li-order-track">
                       <span className="nk-span-unchecked-order">
-                        {/* <span><i class="fas fa-check"></i></span> */}
+                        {/* <span><i className="fas fa-check"></i></span> */}
                       </span>
                       <h3 className="nk-unchecked-order-status">
                         Order In Transit
@@ -172,7 +172,7 @@ const token=localStorage.getItem('token');
                     </li>
                     <li className="nk-li-order-track">
                       <span className="nk-span-unchecked-order">
-                        {/* <span><i class="fas fa-check"></i></span> */}
+                        {/* <span><i className="fas fa-check"></i></span> */}
                       </span>
                       <h3 className="nk-unchecked-order-status">
                         Delivered to the Customer
@@ -236,7 +236,7 @@ const token=localStorage.getItem('token');
                     </li>
                     <li className="nk-li-order-track">
                       <span className="nk-span-unchecked-order">
-                        {/* <span><i class="fas fa-check"></i></span> */}
+                        {/* <span><i className="fas fa-check"></i></span> */}
                       </span>
                       <h3 className="nk-unchecked-order-status">
                         Order In Transit
@@ -244,7 +244,7 @@ const token=localStorage.getItem('token');
                     </li>
                     <li className="nk-li-order-track">
                       <span className="nk-span-unchecked-order">
-                        {/* <span><i class="fas fa-check"></i></span> */}
+                        {/* <span><i className="fas fa-check"></i></span> */}
                       </span>
                       <h3 className="nk-unchecked-order-status">
                         Delivered to the Customer

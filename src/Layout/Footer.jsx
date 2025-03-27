@@ -49,7 +49,7 @@ function Footer() {
               <h1 className="nk-footer-nav-title">ໝວດສິນຄ້າ</h1>
               <div className="nk-footer-nav-link-div">
                 {itemTiles.map((item, index) => (
-                  <div><Link className="nk-footer-nav-link" to={'/pdc?p=' + item.tile_uuid}><i class="fa-solid fa-arrow-right" /> {item.tile_name}</Link></div>
+                  <div><Link className="nk-footer-nav-link" to={'/pdc?p=' + item.tile_uuid}><i className="fa-solid fa-arrow-right" /> {item.tile_name}</Link></div>
                 ))}
               </div>
             </div>
@@ -57,7 +57,7 @@ function Footer() {
                 <h1 className="nk-footer-nav-title">ຜະລິດຕະພັນຫຼ້າສຸດ</h1>
                 <div className="nk-footer-nav-link-div">
                   {itemRecomende.map((item,index)=>
-                  <div><a className="nk-footer-nav-link" href="javascript:;"><i class="fa-solid fa-angle-right"></i> {item.recomennde_name}</a></div>
+                  <div><a className="nk-footer-nav-link" href="javascript:;"><i className="fa-solid fa-angle-right"></i> {item.recomennde_name}</a></div>
                 )}
                 
                 </div>
@@ -65,13 +65,13 @@ function Footer() {
             <div>
                 <h1 className="nk-footer-nav-title">ຕິດຕໍ່ຂອງພວກເຮົາ</h1>
                 <div className="nk-footer-nav-link-div">
-                  <div><i class="fa-solid fa-phone fs-14px" /> :<a className="nk-footer-nav-link" href="tel:+8562095555609"> (+856) 20 95 555 609</a></div>
-                  <div><i class="fa-solid fa-phone fs-14px" /> : <a className="nk-footer-nav-link" href="tel:+8562094424363"> (+856) 020 94 424 363</a></div>
-                  <div><i class="fa-brands fa-whatsapp  fs-14px" /> : <a className="nk-footer-nav-link" href="https://wa.me/8562095555609" target="_blank" rel="noopener noreferrer"> WhatsApp</a></div>
-                  <div><i class="fa-solid fa-envelope fs-14px" /> :  <a className="nk-footer-nav-link" href="#!">Email</a></div>
-                  <div><i class="fa-brands fa-facebook-f fs-14px" /> : <a className="nk-footer-nav-link" href="https://www.facebook.com/profile.php?id=100064645995670" target='_blank'>Facebook</a></div>
-                  <div><i class="fa-brands fa-tiktok fs-14px"/> : <a className="nk-footer-nav-link" href="https://www.tiktok.com/@vkgold888" target='_blank'>Tiktok</a></div>
-                  <div><i class="fa-solid fa-map-location-dot fs-14px"/> : <a className="nk-footer-nav-link" href="https://maps.app.goo.gl/Ec2sMx2JNsQEUKoL7" target='_blank'> Map (GPS) </a></div>
+                  <div><i className="fa-solid fa-phone fs-14px" /> :<a className="nk-footer-nav-link" href="tel:+8562095555609"> (+856) 20 95 555 609</a></div>
+                  <div><i className="fa-solid fa-phone fs-14px" /> : <a className="nk-footer-nav-link" href="tel:+8562094424363"> (+856) 020 94 424 363</a></div>
+                  <div><i className="fa-brands fa-whatsapp  fs-14px" /> : <a className="nk-footer-nav-link" href="https://wa.me/8562095555609" target="_blank" rel="noopener noreferrer"> WhatsApp</a></div>
+                  <div><i className="fa-solid fa-envelope fs-14px" /> :  <a className="nk-footer-nav-link" href="#!">Email</a></div>
+                  <div><i className="fa-brands fa-facebook-f fs-14px" /> : <a className="nk-footer-nav-link" href="https://www.facebook.com/profile.php?id=100064645995670" target='_blank'>Facebook</a></div>
+                  <div><i className="fa-brands fa-tiktok fs-14px"/> : <a className="nk-footer-nav-link" href="https://www.tiktok.com/@vkgold888" target='_blank'>Tiktok</a></div>
+                  <div><i className="fa-solid fa-map-location-dot fs-14px"/> : <a className="nk-footer-nav-link" href="https://maps.app.goo.gl/Ec2sMx2JNsQEUKoL7" target='_blank'> Map (GPS) </a></div>
                 </div>
               </div>
           </div>

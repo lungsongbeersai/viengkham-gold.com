@@ -39,12 +39,12 @@ export default function SliderType() {
         //     autoPlaySpeed={3000} // Adjusted autoPlaySpeed
         //     centerMode={false}
         //     className=""
-        //     containerClass="container-with-dots"
-        //     dotListClass=""
+        //     containerclassName="container-with-dots"
+        //     dotListclassName=""
         //     draggable
         //     focusOnSelect={false}
         //     infinite
-        //     itemClass=""
+        //     itemclassName=""
         //     keyBoardControl
         //     minimumTouchDrag={80}
         //     pauseOnHover
@@ -56,22 +56,22 @@ export default function SliderType() {
         //     rtl={false}
         //     shouldResetAutoplay
         //     showDots={false}
-        //     sliderClass=""
+        //     sliderclassName=""
         //     slidesToSlide={1}
         //     swipeable
         // >
         //     {itemTiles.map((item, index) => (
         //         <div className='group ms-2 me-2 '>
         //         <div className='border-danger shadow-primary rounded-lg flex-grow cursor-pointer flex-col items-center justify-center border-2   '>
-        //             <Link class="h-full w-full " to={'/pdc?p='+item.tile_uuid}>
-        //                 <div class="flex flex-col items-center justify-center">
-        //                   <div class=" h-28 w-28">
-        //                     <img class="h-full w-full object-contain "
+        //             <Link className="h-full w-full " to={'/pdc?p='+item.tile_uuid}>
+        //                 <div className="flex flex-col items-center justify-center">
+        //                   <div className=" h-28 w-28">
+        //                     <img className="h-full w-full object-contain "
         //                       src={`${img}title/${item.title_image}`} alt="" />
         //                   </div>
         //                   <div>
         //                     <p
-        //                       class="group-hover:text-primary line-clamp-1 mt-2 text-sm font-semibold text-gray-900 group-hover:underline">
+        //                       className="group-hover:text-primary line-clamp-1 mt-2 text-sm font-semibold text-gray-900 group-hover:underline">
         //                       {item.tile_name}
         //                     </p>
         //                   </div>
@@ -113,12 +113,12 @@ export default function SliderType() {
         {itemTiles.map((item, index) => (
         <SwiperSlide onClick={()=>handleLink(item.tile_uuid)} className='rounded-lg'>
             <div className='border-danger shadow-primary rounded-lg flex-grow cursor-pointer flex-col items-center justify-center border-2   '>
-            <div class="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center">
             <div className="h-20 w-20">
             <img className="h-full w-full object-contain" src={`${img}title/${item.title_image}`} alt="" />
             </div>
             </div>
-            <p class="group-hover:text-primary line-clamp-1 text-sm "> {item.tile_name} </p>
+            <p className="group-hover:text-primary line-clamp-1 text-sm "> {item.tile_name} </p>
             </div>
         </SwiperSlide>
     ))}

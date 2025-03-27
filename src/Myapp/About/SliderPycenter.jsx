@@ -49,9 +49,9 @@ useEffect(() => {
                         <div className="w-full max-w-xs text-center">
                             <img className="mx-auto h-48 w-full rounded-lg object-cover object-center"
                                 src={`${img}slider/${item.pcenter_image}`} alt="" />
-                            <div class="mt-2">
-                                <h3 class="text-lg font-medium text-gray-700">{item.pcenter_name}</h3>
-                                <span class="mt-1 font-medium text-gray-600">{item.description}</span>
+                            <div className="mt-2">
+                                <h3 className="text-lg font-medium text-gray-700">{item.pcenter_name}</h3>
+                                <span className="mt-1 font-medium text-gray-600">{item.description}</span>
                             </div>
                         </div>
                     </SwiperSlide>)

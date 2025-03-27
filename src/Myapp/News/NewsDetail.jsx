@@ -129,7 +129,7 @@ const [loading, setLoading] = useState(true);
                     </h4>
                     <ul className="sidebar-list">
                       {itemTiles.map((row, index) => (
-                        <li key={index} className='fs-15px'><Link to={'/pdc?p' + row.tile_uuid}><i class="fa-solid fa-angle-right" /> {row.tile_name} ({row.qty_stock})</Link></li>
+                        <li key={index} className='fs-15px'><Link to={'/pdc?p' + row.tile_uuid}><i className="fa-solid fa-angle-right" /> {row.tile_name} ({row.qty_stock})</Link></li>
                       ))}
                     </ul>
                   </div>

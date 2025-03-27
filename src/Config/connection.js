@@ -10,12 +10,12 @@
 //   };
   
   export const Config = {
-      urlApi: 'http://api-gold.plc.la/',
+      urlApi: 'https://api.viengkham-gold.com/',
       apiKey: 'your-api-key',
     };
     
     export const Urlimage = {
-      url: 'http://api-gold.plc.la/image/',
+      url: 'https://api.viengkham-gold.com/image/',
       apiKey: 'your-api-key',
     };
     

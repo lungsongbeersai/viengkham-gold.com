@@ -69,8 +69,8 @@ export default function HomePage() {
                 <div className="panel border-prices border border-danger border-top-0">
                   <div className="panel-heading bg-viengkham text-center border-b-0 py-1">
                     <h4 className="panel-title fs-14px wrapper">
-                      <div class="bg">ລາຄາຄຳປະຈຳວັນ </div>
-                      <div class="fg">ລາຄາຄຳປະຈຳວັນ </div>
+                      <div className="bg">ລາຄາຄຳປະຈຳວັນ </div>
+                      <div className="fg">ລາຄາຄຳປະຈຳວັນ </div>
                     </h4>
                   </div>
                   <div className="">
@@ -83,8 +83,8 @@ export default function HomePage() {
                   <div className="panel panel-inverse border-prices mb-1 border border-danger border-top-0 " key={index}>
                     <div className="panel-heading bg-viengkham text-center border-b-0 py-1">
                       <h4 className="panel-title wrapper fs-16px">
-                        <div class="bg"> ລາຄາ {item.typeName} ວັນນີ້ </div>
-                        <div class="fg"> ລາຄາ {item.typeName} ວັນນີ້ </div>
+                        <div className="bg"> ລາຄາ {item.typeName} ວັນນີ້ </div>
+                        <div className="fg"> ລາຄາ {item.typeName} ວັນນີ້ </div>
 
                       </h4>
                     </div>
@@ -115,12 +115,12 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div class="mx-auto  w-full p-3 pt-1 text-base sm:w-full bg-red" style={{backgroundImage: `url(./assets/img/banners/poster-banner.png)`,
+        <div className="mx-auto  w-full p-3 pt-1 text-base sm:w-full bg-red" style={{backgroundImage: `url(./assets/img/banners/poster-banner.png)`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'center'}}>
-          <div class="nk-swiper-container">
-            <div class="swiper nk-categ-swiper">
+          <div className="nk-swiper-container">
+            <div className="swiper nk-categ-swiper">
               <SliderType />
             </div>
           </div>
@@ -130,9 +130,9 @@ export default function HomePage() {
             <div className="row sm:px-6 xl:max-w-7xl xl:px-2">
               {itemPromotion.slice(0, 3).map((row, key) => (
                 <div key={key} className='col-sm-4 px-1 rounded'>
-                  <div class="relative h-full w-full">
-                    <div class="h-full w-full">
-                        <img class="h-full w-full object-cover rounded" src={`${img}promotion/${row.pro_image}`} alt="" />
+                  <div className="relative h-full w-full">
+                    <div className="h-full w-full">
+                        <img className="h-full w-full object-cover rounded" src={`${img}promotion/${row.pro_image}`} alt="" />
                     </div>
                   </div>
                 </div>
@@ -145,34 +145,34 @@ export default function HomePage() {
 
       {/* ================== 2323  ========================== */}
 
-      {/* <div class="mx-auto mt-2 w-full px-4 sm:w-full sm:px-6 xl:max-w-7xl xl:px-2 mb-3 md:block bg-vkg"> */}
+      {/* <div className="mx-auto mt-2 w-full px-4 sm:w-full sm:px-6 xl:max-w-7xl xl:px-2 mb-3 md:block bg-vkg"> */}
       <div className='mx-auto px-4 mt-2 p-3  w-full bg-vkg  md:block'>
-        <div class="my-3">
-          <div class="flex flex-row justify-between text-base">
-            <h1 class="font-bold xl:text-2xl">ລວດລາຍ ຮູບແບບຜະລິດຕະພັນ ປະຈຳຮ້ານ</h1>
-            <h6 class="cursor-pointer hover:underline text-white">
-              <Link to={'/pattern'} className='text-white'>  ເບີ່ງທັງໝົດ. <span><i class="fas fa-caret-right"></i></span> </Link>
+        <div className="my-3">
+          <div className="flex flex-row justify-between text-base">
+            <h1 className="font-bold xl:text-2xl">ລວດລາຍ ຮູບແບບຜະລິດຕະພັນ ປະຈຳຮ້ານ</h1>
+            <h6 className="cursor-pointer hover:underline text-white">
+              <Link to={'/pattern'} className='text-white'>  ເບີ່ງທັງໝົດ. <span><i className="fas fa-caret-right"></i></span> </Link>
             </h6>
           </div>
-          <p class="text-sm text-white">ສຳຫຼວດຄໍເລັກຊັນຂອງຜູ້ຂາຍດີທີ່ສຸດອັນດັບໜຶ່ງຂອງພວກເຮົາ</p>
+          <p className="text-sm text-white">ສຳຫຼວດຄໍເລັກຊັນຂອງຜູ້ຂາຍດີທີ່ສຸດອັນດັບໜຶ່ງຂອງພວກເຮົາ</p>
         </div>
-        <div class="nk-swiper-container ">
-          <div class="nk-best-seller-swiper ">
+        <div className="nk-swiper-container ">
+          <div className="nk-best-seller-swiper ">
             <SliderPattern colum={7} />
           </div>
         </div>
       </div>
 
 
-      <div class="mx-auto hidden h-96 w-full bg-gray-200 md:block" style={{ background: "url(./assets/img/banners/6.jpg) center 0px / cover no-repeat" }}>
-        <div class="mx-auto flex flex-row md:max-w-7xl">
-          <div class="h-96 w-1/2">
-            <img class="h-full w-full object-contain" src="public/assets/img/banners/banners.png" alt="" />
+      <div className="mx-auto hidden h-96 w-full bg-gray-200 md:block" style={{ background: "url(./assets/img/banners/6.jpg) center 0px / cover no-repeat" }}>
+        <div className="mx-auto flex flex-row md:max-w-7xl">
+          <div className="h-96 w-1/2">
+            <img className="h-full w-full object-contain" src="./assets/img/banners/banners.png" alt="" />
           </div>
-          <div class="p-5">
-            <div class="mx-auto space-y-5 md:max-w-lg">
-              <h1 class="text-2xl text-white font-medium">ໜ້າຮ້ານຄຳ ນາງວຽງຄຳ!</h1>
-              <p class="text-sm text-white">
+          <div className="p-5">
+            <div className="mx-auto space-y-5 md:max-w-lg">
+              <h1 className="text-2xl text-white font-medium">ໜ້າຮ້ານຄຳ ນາງວຽງຄຳ!</h1>
+              <p className="text-sm text-white">
                 ອອກແບບພະລິດ ແລະຈຳໜາຍຄຳ ຮູບປະພັນ,ຄຳແທ່ງ ຫຼາຍຮູບແບບ
               </p>
             </div>
@@ -181,8 +181,8 @@ export default function HomePage() {
       </div>
 
       <div className="mx-auto w-full py-5 sm:px-6 md:px-12 lg:px-12  xl:px-0">
-        <div class="container mx-auto bg-white">
-          <div class="justify-center">
+        <div className="container mx-auto bg-white">
+          <div className="justify-center">
             <SliderPycenter colum={6} />
           </div>
         </div>

@@ -80,7 +80,7 @@ function SliderPattern({colum}) {
          <Card.Body className='py-1 px-1'>
            <Card.Title className='fs-15px line-clamp-1'>{item.pattern_name}</Card.Title>
            <Card.Text className='mt-1 line-clamp-1'>{item.pattern_remart}</Card.Text>
-           <div className="product-price text-end text-orange">{numeral(item.pattern_pirce).format('0,00')}  ₭</div> 
+           <div className="product-price text-end text-orange mt-n4">{numeral(item.pattern_pirce).format('0,00')}  ₭</div> 
          </Card.Body>
        </Card>
         </SwiperSlide>

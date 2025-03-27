@@ -70,31 +70,31 @@ function ApplyjobPage() {
             <Loading size="medium" text="ກໍາລັງໂຫລດຂໍ້ມູນ...." textColor="red" />
           </div>) : (
             displayedItems.map((item, index) => (
-              <div key={index} class="card p-0 shadow-md sm:p-8">
-                <img class="card-img-top " src={`${img}job/${item.job_image}`} alt="" />
-                <div class="card-body ">
-                  <h5 class="card-title">{item.apply_job_title}</h5>
+              <div key={index} className="card p-0 shadow-md sm:p-8">
+                <img className="card-img-top " src={`${img}job/${item.job_image}`} alt="" />
+                <div className="card-body ">
+                  <h5 className="card-title">{item.apply_job_title}</h5>
                   <div className="text-new"> ເລີ່ມສະໝັກ : {moment(item.start_date).format('DD/MM/YYYY')} <span className="divider">-|-</span> {moment(item.end_date).format('DD/MM/YYYY')}</div>
-                  <p class="card-text post-desc">
+                  <p className="card-text post-desc">
                     <div className="text-new" dangerouslySetInnerHTML={{ __html: item.apply_job_text }}></div>
                   </p>
-                  <Link to={'/r?j=' + btoa(item.apply_job_id)} class="btn btn-dark text-gold btn-outline-danger"> <i class="fa-regular fa-hand-point-right me-3" /> ລົງທະບຽນສະໝັກງານ</Link>
+                  <Link to={'/r?j=' + btoa(item.apply_job_id)} className="btn btn-dark text-gold btn-outline-danger"> <i className="fa-regular fa-hand-point-right me-3" /> ລົງທະບຽນສະໝັກງານ</Link>
                 </div>
               </div>
             ))
           )}
         {currentPage.length>0 &&  
 
-          <div class="flex flex-row items-center justify-center py-7">
-            <span class="cursor-not-allowed px-3 text-gray-300" >
+          <div className="flex flex-row items-center justify-center py-7">
+            <span className="cursor-not-allowed px-3 text-gray-300" >
               <a href="javascript:void(0)" className={`${currentPage === 1 ? 'disabled' : ' text-dark'}`} onClick={handlePrevPage}>Prev</a >
             </span>
-            <span class="space-x-3">
+            <span className="space-x-3">
               {[...Array(Math.ceil(itemJob.length / itemsPerPage)).keys()].map(pageNumber => (
                 <a key={pageNumber + 1} className={` ${currentPage === pageNumber + 1 ? 'bg-gold' : ''} rounded px-2 py-1 text-gray-50`} href="javascript:void(0)" onClick={() => handlePageClick(pageNumber + 1)}>{pageNumber + 1}</a>
               ))}
             </span>
-            <span class="hover:text-dark-100 px-3" >
+            <span className="hover:text-dark-100 px-3" >
               <a href="javascript:void(0)" className={`text-dark ${currentPage === Math.ceil(itemJob.length / itemsPerPage) ? 'disabled' : ''}`} onClick={handleNextPage}>Next</a>
             </span>
           </div>
@@ -107,12 +107,12 @@ function ApplyjobPage() {
                 <h3 className="card-title fs-22px">ລາຍການສະໝັກງານ</h3>
               </div>
               <div className="card-body p-0">
-                {/* <div class="hidden text-sm lg:block "> */}
-                  <ul class="mt-2 space-y-3 px-4 text-slate-500">
+                {/* <div className="hidden text-sm lg:block "> */}
+                  <ul className="mt-2 space-y-3 px-4 text-slate-500">
                     {itemJob.slice(0, 20).map((item, index) => (
                       <li key={index}>
-                        <span><i class="fa-solid fa-indent fs-18px me-3 text-red"></i> </span>
-                        <a class="hover:underline fs-18px text-dark" href="javascript:void(0)">{item.apply_job_title}  </a>
+                        <span><i className="fa-solid fa-indent fs-18px me-3 text-red"></i> </span>
+                        <a className="hover:underline fs-18px text-dark" href="javascript:void(0)">{item.apply_job_title}  </a>
                         <p className='date text-sm ms-5 text-red'>{moment(item.start_date).format('DD/MM/YYYY')}</p>
 
                       </li>
@@ -128,12 +128,12 @@ function ApplyjobPage() {
                 <h3 className="card-title fs-22px">ປະເພດພະລິດຕະພັນ</h3>
               </div>
               <div className="card-body p-0">
-                {/* <div class="hidden text-sm lg:block "> */}
-                  <ul class="mt-2 space-y-3 px-4 text-slate-500">
+                {/* <div className="hidden text-sm lg:block "> */}
+                  <ul className="mt-2 space-y-3 px-4 text-slate-500">
                   {itemTiles.map((row, index) => (
                       <li key={index}>
-                        <i class="fa-solid fa-circle-arrow-right me-3 text-red"></i>
-                        <Link class="hover:underline fs-18px text-dark" to={'/pdc?p=' + row.tile_uuid}>{row.tile_name}  </Link>
+                        <i className="fa-solid fa-circle-arrow-right me-3 text-red"></i>
+                        <Link className="hover:underline fs-18px text-dark" to={'/pdc?p=' + row.tile_uuid}>{row.tile_name}  </Link>
                       </li>
                     ))}
                   </ul>

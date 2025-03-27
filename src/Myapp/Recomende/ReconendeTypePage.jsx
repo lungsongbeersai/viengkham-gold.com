@@ -119,14 +119,14 @@ const [titleName, setTitleName] = useState('');
 
         </div>
 
-        {/* <div class="flex flex-row items-center justify-center py-7">
-          <span class="px-3"><a href="javascript:void(0)" className={`${currentPage === 1 && 'disabled'}`} onClick={() => setCurrentPage(currentPage - 1)}><i class="fas fa-chevron-left"></i></a ></span>
-          <span class="space-x-3">
+        {/* <div className="flex flex-row items-center justify-center py-7">
+          <span className="px-3"><a href="javascript:void(0)" className={`${currentPage === 1 && 'disabled'}`} onClick={() => setCurrentPage(currentPage - 1)}><i className="fas fa-chevron-left"></i></a ></span>
+          <span className="space-x-3">
             {pageNumbers.map(number => (
               <a class={`rounded px-2 py-1 ${currentPage === number ? 'bg-orange text-gray-50' : 'hover:bg-primary-300 hover:text-gray-50'}`} href="javascript:void(0)" onClick={() => setCurrentPage(number)}>{number}</a>
             ))}
           </span>
-          <span class="hover:text-primary-800 px-3" ><a href="javascript:void(0)" className={`${currentPage === pageNumbers.length && 'disabled'}`} onClick={() => setCurrentPage(currentPage + 1)}><i class="fas fa-chevron-right"></i></a ></span>
+          <span className="hover:text-primary-800 px-3" ><a href="javascript:void(0)" className={`${currentPage === pageNumbers.length && 'disabled'}`} onClick={() => setCurrentPage(currentPage + 1)}><i className="fas fa-chevron-right"></i></a ></span>
         </div> */}
 
 <ViewRecomend show={show} handleClose={()=>setShow(false)} data={data} />

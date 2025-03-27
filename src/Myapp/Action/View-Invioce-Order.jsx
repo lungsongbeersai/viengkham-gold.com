@@ -61,9 +61,9 @@ function ViewInvioceOrder({ show, handleClose, data }) {
         <>
             <Modal show={show} onHide={handleClose} size="xl">
                 <div className='text-right p-2'>
-                    <button type="button" onClick={() => downloadIMG(data.pay_sale_code)} className='btn btn-primary btn-sm me-2'><i class="fa-regular fa-image"></i> ຮູບ</button>
-                    <button type="button" onClick={() => downloadPDF(data.pay_sale_code)} className='btn btn-danger btn-sm me-2'><i class="fa-solid fa-download"></i> PDF</button>
-                    <button type='button' onClick={handleClose} className='btn btn-warning btn-sm'> <i class="fa-solid fa-xmark"></i></button>
+                    <button type="button" onClick={() => downloadIMG(data.pay_sale_code)} className='btn btn-primary btn-sm me-2'><i className="fa-regular fa-image"></i> ຮູບ</button>
+                    <button type="button" onClick={() => downloadPDF(data.pay_sale_code)} className='btn btn-danger btn-sm me-2'><i className="fa-solid fa-download"></i> PDF</button>
+                    <button type='button' onClick={handleClose} className='btn btn-warning btn-sm'> <i className="fa-solid fa-xmark"></i></button>
                 </div>
                 <Modal.Body className='p-lg-3 p-0 modal-body' >
                     <div className="" style={{
@@ -107,7 +107,7 @@ function ViewInvioceOrder({ show, handleClose, data }) {
                             </tr>
                         </table>
 
-                        <div class="table-responsive mt-3">
+                        <div className="table-responsive mt-3">
                             <table className='w-100 table-sm table-bordered align-middle text-nowrap'>
                                 <thead className='bg-viengkham'>
                                     <tr >
@@ -178,13 +178,13 @@ function ViewInvioceOrder({ show, handleClose, data }) {
                                 </tr>
                                 <tr>
                                     <td className='text-end text-blue'>ເອກະສານໂອນຈ່າຍ:</td>
-                                    <td className=''> <span className='text-right ms-3 text-red' onClick={() => handleDownload(`${img}document/paysale/${data.file_transfer}`)} role='button'><i class="fa-solid fa-download"></i> {data.file_transfer}</span> </td>
+                                    <td className=''> <span className='text-right ms-3 text-red' onClick={() => handleDownload(`${img}document/paysale/${data.file_transfer}`)} role='button'><i className="fa-solid fa-download"></i> {data.file_transfer}</span> </td>
                                 </tr>
                             </table>
                         </div>
                         {data.status_pays === 3 && (
                             <div className="px-4 p-3">
-                                <div className=" fs-16px text-green"> <i class="fa-solid fa-check"></i> ທ່ານໄດ້ມີການຮັບສິນຄ້າຈາກຮ້ານຄຳ ນາງວຽງຄຳ ແລ້ວ ເມືອວັນທີ:<b>{moment(data.date_approved).format('DD/MM/YYYY hh:mm:ss')}</b>
+                                <div className=" fs-16px text-green"> <i className="fa-solid fa-check"></i> ທ່ານໄດ້ມີການຮັບສິນຄ້າຈາກຮ້ານຄຳ ນາງວຽງຄຳ ແລ້ວ ເມືອວັນທີ:<b>{moment(data.date_approved).format('DD/MM/YYYY hh:mm:ss')}</b>
                                     <div className="fs-18px"> ຜູ້ອະນຸມັດອອກ: {data.userName}</div>
                                 </div>
                             </div>

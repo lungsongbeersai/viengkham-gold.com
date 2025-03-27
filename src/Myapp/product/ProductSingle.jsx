@@ -362,20 +362,20 @@ function ProductSingle() {
               </div>
             </div>
             {/* Fabric & Care Accordion 
-        <div class="border-b border-gray-400">
+        <div className="border-b border-gray-400">
           <div
-            class="nk-item-accordion flex cursor-pointer items-center justify-between py-4 px-2 transition duration-75 hover:bg-gray-100"
+            className="nk-item-accordion flex cursor-pointer items-center justify-between py-4 px-2 transition duration-75 hover:bg-gray-100"
           >
-            <h1 class="font-semibold">Fabric &amp; Care</h1>
-            <span  class="nk-chevron-icon transition duration-200 ease-in"
-              ><i class="fas fa-chevron-down"></i
+            <h1 className="font-semibold">Fabric &amp; Care</h1>
+            <span  className="nk-chevron-icon transition duration-200 ease-in"
+              ><i className="fas fa-chevron-down"></i
             ></span>
           </div>
-          <div class="nk-item-info overflow-hidden bg-white">
-            <div class="p-4">
+          <div className="nk-item-info overflow-hidden bg-white">
+            <div className="p-4">
               <div>
-                <h1 class="font-semibold">Product Description</h1>
-                <p class="w-3/4">
+                <h1 className="font-semibold">Product Description</h1>
+                <p className="w-3/4">
                   Originally released in 1982, the Nike Air Force 1 was the first Nike model to feature "Air"
                   technology. This legendary basketball sneaker wa designed by Bruce Kilgore, and named after the
                   aircraft carries, the Air Force One. The Air Force 1 is Nike's most popular sneaker to date, has
@@ -387,20 +387,20 @@ function ProductSingle() {
           </div>
         </div>
          Size Chart & Information Accordion 
-        <div class="border-b border-gray-400">
+        <div className="border-b border-gray-400">
           <div
-            class="nk-item-accordion flex cursor-pointer items-center justify-between py-4 px-2 transition duration-75 hover:bg-gray-100"
+            className="nk-item-accordion flex cursor-pointer items-center justify-between py-4 px-2 transition duration-75 hover:bg-gray-100"
           >
-            <h1 class="font-semibold">Size Chart &amp; Information</h1>
-            <span  class="nk-chevron-icon transition duration-200 ease-in"
-              ><i class="fas fa-chevron-down"></i
+            <h1 className="font-semibold">Size Chart &amp; Information</h1>
+            <span  className="nk-chevron-icon transition duration-200 ease-in"
+              ><i className="fas fa-chevron-down"></i
             ></span>
           </div>
-          <div class="nk-item-info overflow-hidden bg-white">
-            <div class="p-4">
+          <div className="nk-item-info overflow-hidden bg-white">
+            <div className="p-4">
               <div>
-                <h1 class="font-semibold">Product Description</h1>
-                <p class="w-3/4">
+                <h1 className="font-semibold">Product Description</h1>
+                <p className="w-3/4">
                   Originally released in 1982, the Nike Air Force 1 was the first Nike model to feature "Air"
                   technology. This legendary basketball sneaker wa designed by Bruce Kilgore, and named after the
                   aircraft carries, the Air Force One. The Air Force 1 is Nike's most popular sneaker to date, has

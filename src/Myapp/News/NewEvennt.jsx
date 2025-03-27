@@ -126,20 +126,20 @@ function NewEvennt() {
                                 <div className="post-image-cover w-100" style={{ backgroundImage: `url(${img}potstnew/${val.img_list})` }} />
                               ))}
                             </div>
-                            <div class="post-info  px-2">
-                              <h4 class="post-title ">
+                            <div className="post-info  px-2">
+                              <h4 className="post-title ">
                                 <Link to={'/nd?v=' + btoa(item.event_id)}>{item.titleName}</Link>
                               </h4>
-                              <div class="post-by">
-                                Date <span class="divider">|</span> {moment(item.newDate).format('DD /MM /YYYY')}
+                              <div className="post-by">
+                                Date <span className="divider">|</span> {moment(item.newDate).format('DD /MM /YYYY')}
                               </div>
-                              <div class="post-desc w-100">
+                              <div className="post-desc w-100">
                                 <div className="text-new">
                                   <span dangerouslySetInnerHTML={{ __html: item.newText }}></span>
                                 </div>
                               </div>
-                              <div class="read-btn-container">
-                                <Link to={'/nd?v=' + btoa(item.event_id)} class="read-btn fs-15px text-red px-2">ອ່ານເພີ່ມເຕີມ.. <i class="fa fa-angle-double-right"></i></Link>
+                              <div className="read-btn-container">
+                                <Link to={'/nd?v=' + btoa(item.event_id)} className="read-btn fs-15px text-red px-2">ອ່ານເພີ່ມເຕີມ.. <i className="fa fa-angle-double-right"></i></Link>
                               </div>
                             </div>
                           </div>
@@ -205,7 +205,7 @@ function NewEvennt() {
                     </h4>
                     <ul className="sidebar-list pt-1">
                       {itemTiles.map((row, index) => (
-                        <li key={index} className='fs-15px'><Link to={'/pdc?p' + row.tile_uuid}><i class="fa-solid fa-angle-right" /> {row.tile_name} ({row.qty_stock})</Link></li>
+                        <li key={index} className='fs-15px'><Link to={'/pdc?p' + row.tile_uuid}><i className="fa-solid fa-angle-right" /> {row.tile_name} ({row.qty_stock})</Link></li>
                       ))}
                     </ul>
                   </div>

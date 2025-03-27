@@ -16,7 +16,7 @@ function ViewRecomend({show,handleClose,data}) {
     <Modal.Body className='p-0'>
       <Card className='view'>
       <Card.Img variant="top" src={`${img}pos/${data.recd_image}`} />
-      <span onClick={handleClose} className='view-top-right btn btn-danger btn-sm rounded-circle'><i class="fa-solid fa-circle-xmark" /></span>
+      <span onClick={handleClose} className='view-top-right btn btn-danger btn-sm rounded-circle'><i className="fa-solid fa-circle-xmark" /></span>
       <Card.Body>
         <Card.Title>{data.recomennde_name}</Card.Title>
         <Card.Text>

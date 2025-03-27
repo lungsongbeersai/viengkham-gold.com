@@ -17,7 +17,7 @@ function MobileMenu() {
       <div id="mob-sticky-wishlist" className="w-1/5 ">
         <Link to={'/product'}>
           <div className="flex flex-col flex-wrap items-center text-red">
-          <span className="text-lg"><i class="fa-solid fa-layer-group"></i></span>
+          <span className="text-lg"><i className="fa-solid fa-layer-group"></i></span>
             <span className='fs-16px'>ສິນຄ້າ</span>
           </div>
         </Link>

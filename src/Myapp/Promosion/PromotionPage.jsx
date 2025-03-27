@@ -48,18 +48,18 @@ function PromotionPage() {
           <span>ໂປຣໂມຊັ່ນ</span>
         </div>
 
-        <div class="mx-auto mt-2 w-full px-4 text-base sm:w-full">
-          <div class="nk-swiper-container">
-            <div class="swiper nk-categ-swiper">
+        <div className="mx-auto mt-2 w-full px-4 text-base sm:w-full">
+          <div className="nk-swiper-container">
+            <div className="swiper nk-categ-swiper">
               <SliderType />
             </div>
           </div>
         </div>
 
-        <div class="mx-auto mt-12 w-full px-4 sm:w-full sm:px-6 xl:max-w-7xl xl:px-2">
+        <div className="mx-auto mt-12 w-full px-4 sm:w-full sm:px-6 xl:max-w-7xl xl:px-2">
           <div id="sponsoredItems">
-            <div class="mt-7 space-y-1">
-              <h1 class="text-sm font-semibold sm:text-2xl">ໂປຣໂມຊັ່ນ</h1>
+            <div className="mt-7 space-y-1">
+              <h1 className="text-sm font-semibold sm:text-2xl">ໂປຣໂມຊັ່ນ</h1>
               {isloading ? (
                 <div className="text-center">
                   <div className="spinner-border" role="status">
@@ -85,8 +85,8 @@ function PromotionPage() {
         </div>
 
 
-        <div class="mx-auto mt-8 px-4 mt-1 sm:px-6 xl:max-w-7xl xl:px-2">
-          <div class="row flex h-full w-full flex-wrap" >
+        <div className="mx-auto mt-8 px-4 mt-1 sm:px-6 xl:max-w-7xl xl:px-2">
+          <div className="row flex h-full w-full flex-wrap" >
             {itemPromotion.slice(1, limit).map((val, index) =>
               <>
                 <div key={index} className={`px-2 col-6  ${itemPromotion.length > 3 ? 'col-sm-4' : 'col-sm-6'}`}>

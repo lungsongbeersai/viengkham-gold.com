@@ -122,12 +122,12 @@ function RegisterJob() {
 
       <div className="row gx-lg-5 mt-4 px-2">
         <div className="col-lg-6">
-          <div key={item.apply_job_id} class="card p-0 shadow-md sm:p-8">
-            <img class="card-img-top " src={`${img}job/${item.job_image}`} alt="" />
-            <div class="card-body ">
-              <h5 class="card-title">{item.apply_job_title}</h5>
+          <div key={item.apply_job_id} className="card p-0 shadow-md sm:p-8">
+            <img className="card-img-top " src={`${img}job/${item.job_image}`} alt="" />
+            <div className="card-body ">
+              <h5 className="card-title">{item.apply_job_title}</h5>
               <div className="text-new"> ເລີ່ມສະໝັກ : {moment(item.start_date).format('DD/MM/YYYY')} <span className="divider">-|-</span> {moment(item.end_date).format('DD/MM/YYYY')}</div>
-              <p class="card-text">
+              <p className="card-text">
                 <div className="text-new" dangerouslySetInnerHTML={{ __html: item.apply_job_text }}></div>
               </p>
             </div>
@@ -145,7 +145,7 @@ function RegisterJob() {
                   <div className="flex-shrink-0 text-yellow-700">
                     <i className="fa-solid fa-circle-info fs-22px"></i>
                   </div>
-                  <div class="ml-3 text-sm font-medium text-yellow-700">
+                  <div className="ml-3 text-sm font-medium text-yellow-700">
                     ການລົງທະບຽນສະໝັກງານ ກະລຸນາປ້ອນ ຊື່ ແລະ ນາມສະກຸນ ທີ່ຢູ່ເບີໂທລະສັບທີ່ຖຶກຕ້ອງ ແລ້ວທາງຮ້ານຄຳ ນາງວຽງຄຳ ຈະຕິດຕໍ່ກັບພາຍໃນ 1-5 ວັນ
                   </div>
                 </div>

@@ -22,54 +22,54 @@ function AboutPage() {
 
       <div className="mx-auto w-full space-y-16 px-4 sm:px-6 md:px-12 lg:px-12 xl:max-w-6xl xl:px-0">
 
-        <div class="antialiased">
-          <div class="w-2/5 space-y-2">
-            <h1 class="text-xl font-bold text-orange">ຂໍ້ມູນການຕິດຕໍ່?</h1>
-            <div class="w-24 border-2 border-red"></div>
+        <div className="antialiased">
+          <div className="w-2/5 space-y-2">
+            <h1 className="text-xl font-bold text-orange">ຂໍ້ມູນການຕິດຕໍ່?</h1>
+            <div className="w-24 border-2 border-red"></div>
           </div>
-          <div class="pt-6"></div>
-          <div class="row">
-            <div class="col-sm-6" >
+          <div className="pt-6"></div>
+          <div className="row">
+            <div className="col-sm-6" >
               <div className="grid px-3 rounded bg-white py-6 shadow ">
-                <div class="  text-center">
-                  <div class="text-4xl text-center">
+                <div className="  text-center">
+                  <div className="text-4xl text-center">
                     <img src="./assets/img/logo/logo.png" className='w-24 text-center' alt="" />
                   </div>
                 </div>
-                <div class="text-base font-bold fs-22px">ທີ່ຢູ່ຮ້ານຄຳ ນາງວຽງຄຳ</div>
+                <div className="text-base font-bold fs-22px">ທີ່ຢູ່ຮ້ານຄຳ ນາງວຽງຄຳ</div>
                 <div className='mt-4'>
-                  <ul class="sidebar-recent-post">
+                  <ul className="sidebar-recent-post">
                     <li>
-                      <div class="info">
-                        <h4 class="title text-dark fs-18px">ທີ່ຢູ່ຮ້ານ :
-                        <span class="date fs-15px text-gray-600">ຕັ້ງຢູ່ຕະຫລາດເຊົ້າມໍຊັ້ນ2</span>
+                      <div className="info">
+                        <h4 className="title text-dark fs-18px">ທີ່ຢູ່ຮ້ານ :
+                        <span className="date fs-15px text-gray-600">ຕັ້ງຢູ່ຕະຫລາດເຊົ້າມໍຊັ້ນ2</span>
                         </h4>
                       </div>
                     </li>
                     <li>
-                      <div class="info">
-                        <h4 class="title text-dark fs-18px">ຖະໜົນ :
-                        <span class="date fs-15px text-gray-600">ຕັ້ງຢູ່ໃຈກາງລະວາງ ຖະໜົນລ້ານຊ້າງ ກັບ ຖະໜົນໜອງບອນ </span>
+                      <div className="info">
+                        <h4 className="title text-dark fs-18px">ຖະໜົນ :
+                        <span className="date fs-15px text-gray-600">ຕັ້ງຢູ່ໃຈກາງລະວາງ ຖະໜົນລ້ານຊ້າງ ກັບ ຖະໜົນໜອງບອນ </span>
                         </h4>
                       </div>
                     </li>
                     <li>
-                      <div class="info">
-                        <h4 class="title text-dark fs-18px">ບ້ານ :
-                        <span class="date fs-15px text-gray-600">ບ້ານ ຫັດສະດີ </span>
+                      <div className="info">
+                        <h4 className="title text-dark fs-18px">ບ້ານ :
+                        <span className="date fs-15px text-gray-600">ບ້ານ ຫັດສະດີ </span>
                         </h4>
                       </div>
                     </li>
                     <li>
-                      <div class="info">
-                        <h4 class="title text-dark fs-18px">ເມືອງ :
-                        <span class="date fs-15px text-gray-600">ເມືອງ ຈັນທະບູລີ</span>
+                      <div className="info">
+                        <h4 className="title text-dark fs-18px">ເມືອງ :
+                        <span className="date fs-15px text-gray-600">ເມືອງ ຈັນທະບູລີ</span>
                         </h4>
                       </div>
                     </li>
                     <li>
-                      <div class="info">
-                        <h4 class="title text-dark fs-18px">ແຂວງ :  <span class="date fs-15px text-gray-600"> ນະຄອນຫຼວງວຽງຈັນ</span></h4>
+                      <div className="info">
+                        <h4 className="title text-dark fs-18px">ແຂວງ :  <span className="date fs-15px text-gray-600"> ນະຄອນຫຼວງວຽງຈັນ</span></h4>
                        
                       </div>
                     </li>
@@ -77,42 +77,42 @@ function AboutPage() {
                 </div>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div className="col-sm-6">
               <div className="grid px-2 rounded bg-white py-6 text-center shadow ">
-                <div class="h-full w-full">
-                  <span class="mx-auto text-4xl"> <i class="fas fa-headset"></i></span>
+                <div className="h-full w-full">
+                  <span className="mx-auto text-4xl"> <i className="fas fa-headset"></i></span>
                 </div>
-                <div class="text-base font-bold fs-22px mb-3">ຂໍ້ມູນການຕິດຕໍ່</div>
+                <div className="text-base font-bold fs-22px mb-3">ຂໍ້ມູນການຕິດຕໍ່</div>
                 <div className='text-left px-2'>
-                  <ul class="sidebar-list fs-18px ">
+                  <ul className="sidebar-list fs-18px ">
                     <li>
-                      <div class="info">
-                        <a href="tel:+8562095555609" className='text-dark'><i class="fa-solid fa-phone" /> : 20 95 555 609 ,94424369</a>
+                      <div className="info">
+                        <a href="tel:+8562095555609" className='text-dark'><i className="fa-solid fa-phone" /> : 20 95 555 609 ,94424369</a>
                       </div>
                     </li>
                     <li>
-                      <div class="info">
-                        <a href="#" className='text-dark'><i class="fa-solid fa-envelope" /> : Email</a>
+                      <div className="info">
+                        <a href="#" className='text-dark'><i className="fa-solid fa-envelope" /> : Email</a>
                       </div>
                     </li>
                     <li>
-                      <div class="info">
-                        <a href="https://www.facebook.com/profile.php?id=100064645995670" target="_blank" className='text-dark'><i class="fa-brands fa-facebook-f" /> : ຮ້ານຄຳນາງວຽງຄຳ </a>
+                      <div className="info">
+                        <a href="https://www.facebook.com/profile.php?id=100064645995670" target="_blank" className='text-dark'><i className="fa-brands fa-facebook-f" /> : ຮ້ານຄຳນາງວຽງຄຳ </a>
                       </div>
                     </li>
                     <li>
-                      <div class="info">
-                        <a href="https://wa.me/8562095555609" target="_blank" rel="noopener noreferrer" className='text-dark'><i class="fa-brands fa-whatsapp" /> : 020 95 555 609</a>
+                      <div className="info">
+                        <a href="https://wa.me/8562095555609" target="_blank" rel="noopener noreferrer" className='text-dark'><i className="fa-brands fa-whatsapp" /> : 020 95 555 609</a>
                       </div>
                     </li>
                     <li>
-                      <div class="info">
-                        <a href="https://www.tiktok.com/@vkgold888" target="_blank" className='text-dark'><i class="fa-brands fa-tiktok" /> : vkgold888</a>
+                      <div className="info">
+                        <a href="https://www.tiktok.com/@vkgold888" target="_blank" className='text-dark'><i className="fa-brands fa-tiktok" /> : vkgold888</a>
                       </div>
                     </li>
                     <li>
-                      <div class="info">
-                        <a href="#" className='text-dark'><i class="fa-brands fa-instagram" /> : Instagram</a>
+                      <div className="info">
+                        <a href="#" className='text-dark'><i className="fa-brands fa-instagram" /> : Instagram</a>
                       </div>
                     </li>
                   </ul>
@@ -159,14 +159,14 @@ function AboutPage() {
 
         </div>
 
-        <div class="antialiased ">
-          <div class="w-3/5 space-y-3">
-            <h1 class="text-xl font-bold text-orange">ທີມງານຂອງພວກເຮົາ</h1>
-            <div class="w-24 border-2 border-red"></div>
+        <div className="antialiased ">
+          <div className="w-3/5 space-y-3">
+            <h1 className="text-xl font-bold text-orange">ທີມງານຂອງພວກເຮົາ</h1>
+            <div className="w-24 border-2 border-red"></div>
           </div>
-          <div class="pt-3">
-            <div class="container mx-auto bg-white">
-              <div class="justify-center">
+          <div className="pt-3">
+            <div className="container mx-auto bg-white">
+              <div className="justify-center">
 
                 <Swiper
                   slidesPerView={2}
@@ -195,9 +195,9 @@ function AboutPage() {
                     <div className="w-full max-w-xs text-center">
                       <img className="mx-auto h-48 w-full rounded-lg object-cover object-center"
                         src="public/assets/img/our-team/vk01.jpg" alt="" />
-                      <div class="mt-2">
-                        <h3 class="text-lg font-medium text-gray-700">Ahmed Omer</h3>
-                        <span class="mt-1 font-medium text-gray-600">CEO</span>
+                      <div className="mt-2">
+                        <h3 className="text-lg font-medium text-gray-700">Ahmed Omer</h3>
+                        <span className="mt-1 font-medium text-gray-600">CEO</span>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -205,9 +205,9 @@ function AboutPage() {
                     <div className="w-full max-w-xs text-center">
                       <img className="mx-auto h-48 w-full rounded-lg object-cover object-center"
                         src="public/assets/img/our-team/vk02.jpg" alt="" />
-                      <div class="mt-2">
-                        <h3 class="text-lg font-medium text-gray-700">Ahmed Omer</h3>
-                        <span class="mt-1 font-medium text-gray-600">CEO</span>
+                      <div className="mt-2">
+                        <h3 className="text-lg font-medium text-gray-700">Ahmed Omer</h3>
+                        <span className="mt-1 font-medium text-gray-600">CEO</span>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -215,9 +215,9 @@ function AboutPage() {
                     <div className="w-full max-w-xs text-center">
                       <img className="mx-auto h-48 w-full rounded-lg object-cover object-center"
                         src="public/assets/img/our-team/vk03.jpg" alt="" />
-                      <div class="mt-2">
-                        <h3 class="text-lg font-medium text-gray-700">Ahmed Omer</h3>
-                        <span class="mt-1 font-medium text-gray-600">CEO</span>
+                      <div className="mt-2">
+                        <h3 className="text-lg font-medium text-gray-700">Ahmed Omer</h3>
+                        <span className="mt-1 font-medium text-gray-600">CEO</span>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -225,9 +225,9 @@ function AboutPage() {
                     <div className="w-full max-w-xs text-center">
                       <img className="mx-auto h-48 w-full rounded-lg object-cover object-center"
                         src="public/assets/img/our-team/vk04.jpg" alt="" />
-                      <div class="mt-2">
-                        <h3 class="text-lg font-medium text-gray-700">Ahmed Omer</h3>
-                        <span class="mt-1 font-medium text-gray-600">CEO</span>
+                      <div className="mt-2">
+                        <h3 className="text-lg font-medium text-gray-700">Ahmed Omer</h3>
+                        <span className="mt-1 font-medium text-gray-600">CEO</span>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -235,9 +235,9 @@ function AboutPage() {
                     <div className="w-full max-w-xs text-center">
                       <img className="mx-auto h-48 w-full rounded-lg object-cover object-center"
                         src="public/assets/img/our-team/vk05.jpg" alt="" />
-                      <div class="mt-2">
-                        <h3 class="text-lg font-medium text-gray-700">Ahmed Omer</h3>
-                        <span class="mt-1 font-medium text-gray-600">CEO</span>
+                      <div className="mt-2">
+                        <h3 className="text-lg font-medium text-gray-700">Ahmed Omer</h3>
+                        <span className="mt-1 font-medium text-gray-600">CEO</span>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -245,9 +245,9 @@ function AboutPage() {
                     <div className="w-full max-w-xs text-center">
                       <img className="mx-auto h-48 w-full rounded-lg object-cover object-center"
                         src="public/assets/img/our-team/vk06.jpg" alt="" />
-                      <div class="mt-2">
-                        <h3 class="text-lg font-medium text-gray-700">Ahmed Omer</h3>
-                        <span class="mt-1 font-medium text-gray-600">CEO</span>
+                      <div className="mt-2">
+                        <h3 className="text-lg font-medium text-gray-700">Ahmed Omer</h3>
+                        <span className="mt-1 font-medium text-gray-600">CEO</span>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -255,9 +255,9 @@ function AboutPage() {
                     <div className="w-full max-w-xs text-center">
                       <img className="mx-auto h-48 w-full rounded-lg object-cover object-center"
                         src="public/assets/img/our-team/vk07.jpg" alt="" />
-                      <div class="mt-2">
-                        <h3 class="text-lg font-medium text-gray-700">Ahmed Omer</h3>
-                        <span class="mt-1 font-medium text-gray-600">CEO</span>
+                      <div className="mt-2">
+                        <h3 className="text-lg font-medium text-gray-700">Ahmed Omer</h3>
+                        <span className="mt-1 font-medium text-gray-600">CEO</span>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -265,9 +265,9 @@ function AboutPage() {
                     <div className="w-full max-w-xs text-center">
                       <img className="mx-auto h-48 w-full rounded-lg object-cover object-center"
                         src="public/assets/img/our-team/vk08.jpg" alt="" />
-                      <div class="mt-2">
-                        <h3 class="text-lg font-medium text-gray-700">Ahmed Omer</h3>
-                        <span class="mt-1 font-medium text-gray-600">CEO</span>
+                      <div className="mt-2">
+                        <h3 className="text-lg font-medium text-gray-700">Ahmed Omer</h3>
+                        <span className="mt-1 font-medium text-gray-600">CEO</span>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -275,9 +275,9 @@ function AboutPage() {
                     <div className="w-full max-w-xs text-center">
                       <img className="mx-auto h-48 w-full rounded-lg object-cover object-center"
                         src="public/assets/img/our-team/vk09.jpg" alt="" />
-                      <div class="mt-2">
-                        <h3 class="text-lg font-medium text-gray-700">Ahmed Omer</h3>
-                        <span class="mt-1 font-medium text-gray-600">CEO</span>
+                      <div className="mt-2">
+                        <h3 className="text-lg font-medium text-gray-700">Ahmed Omer</h3>
+                        <span className="mt-1 font-medium text-gray-600">CEO</span>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -285,9 +285,9 @@ function AboutPage() {
                     <div className="w-full max-w-xs text-center">
                       <img className="mx-auto h-48 w-full rounded-lg object-cover object-center"
                         src="public/assets/img/our-team/vk10.jpg" alt="" />
-                      <div class="mt-2">
-                        <h3 class="text-lg font-medium text-gray-700">Ahmed Omer</h3>
-                        <span class="mt-1 font-medium text-gray-600">CEO</span>
+                      <div className="mt-2">
+                        <h3 className="text-lg font-medium text-gray-700">Ahmed Omer</h3>
+                        <span className="mt-1 font-medium text-gray-600">CEO</span>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -295,9 +295,9 @@ function AboutPage() {
                     <div className="w-full max-w-xs text-center">
                       <img className="mx-auto h-48 w-full rounded-lg object-cover object-center"
                         src="public/assets/img/our-team/vk11.jpg" alt="" />
-                      <div class="mt-2">
-                        <h3 class="text-lg font-medium text-gray-700">Ahmed Omer</h3>
-                        <span class="mt-1 font-medium text-gray-600">CEO</span>
+                      <div className="mt-2">
+                        <h3 className="text-lg font-medium text-gray-700">Ahmed Omer</h3>
+                        <span className="mt-1 font-medium text-gray-600">CEO</span>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -305,9 +305,9 @@ function AboutPage() {
                     <div className="w-full max-w-xs text-center">
                       <img className="mx-auto h-48 w-full rounded-lg object-cover object-center"
                         src="public/assets/img/our-team/vk12.jpg" alt="" />
-                      <div class="mt-2">
-                        <h3 class="text-lg font-medium text-gray-700">Ahmed Omer</h3>
-                        <span class="mt-1 font-medium text-gray-600">CEO</span>
+                      <div className="mt-2">
+                        <h3 className="text-lg font-medium text-gray-700">Ahmed Omer</h3>
+                        <span className="mt-1 font-medium text-gray-600">CEO</span>
                       </div>
                     </div>
                   </SwiperSlide>

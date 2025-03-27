@@ -95,8 +95,8 @@ useEffect(() => {
                                 <td>{item.pays_remark}</td>
                                 <td>{item.status_pays===1 ? 'ລໍຖາກວດສອບ' : item.status_pays===1 ?'ກວດສອບແລ້ວ':'ໄດ້ຮັບການມອບຮັບແລ້ວ'}</td>
                                 <td className='text-center'>
-                                    <button type='button' onClick={() =>handleDownload(`${img}document/paysale/${item.file_transfer}`)} className='hover:text-white hover:bg-danger  border rounded mr-2 py-1 px-2 '><i class="fa-solid fa-receipt"></i></button>
-                                    <button type='button' onClick={() => handleViewOrder(item)} className='hover:text-white hover:bg-primary rounded border py-1 px-2 '><i class="fa-solid fa-eye"></i></button>
+                                    <button type='button' onClick={() =>handleDownload(`${img}document/paysale/${item.file_transfer}`)} className='hover:text-white hover:bg-danger  border rounded mr-2 py-1 px-2 '><i className="fa-solid fa-receipt"></i></button>
+                                    <button type='button' onClick={() => handleViewOrder(item)} className='hover:text-white hover:bg-primary rounded border py-1 px-2 '><i className="fa-solid fa-eye"></i></button>
                                 </td>
                             </tr>
                         ))}

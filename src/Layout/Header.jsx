@@ -38,31 +38,31 @@ export default function Header() {
   return (
     <header id="header-4 " className=''>
       <nav>
-        <div class="w-full bg-gradient-to-r from-[#FF0000] to-[#FFF455]   py-2.5 text-sm text-white lg:py-0 ">
-          <div class="mx-auto flex max-w-7xl flex-row items-center justify-between px-3 py-2 lg:px-0">
+        <div className="w-full bg-gradient-to-r from-[#FF0000] to-[#FFF455]   py-2.5 text-sm text-white lg:py-0 ">
+          <div className="mx-auto flex max-w-7xl flex-row items-center justify-between px-3 py-2 lg:px-0">
             {/* <!-- Deliver to - End --> */}
-            <div class="my-0 mx-auto overflow-hidden whitespace-nowrap text-center">
-              <span class="animate-nk-slide inline-block"> ຮ້ານຄຳ ນາງວຽງຄຳ ຍິນດີຕ້ອນຮັບທ່ານເຂົ້າສູ່ເວັບໄຊທ໌  😍</span>
+            <div className="my-0 mx-auto overflow-hidden whitespace-nowrap text-center">
+              <span className="animate-nk-slide inline-block"> ຮ້ານຄຳ ນາງວຽງຄຳ ຍິນດີຕ້ອນຮັບທ່ານເຂົ້າສູ່ເວັບໄຊທ໌  😍</span>
             </div>
-            <div class="hidden flex-row items-center space-x-6 lg:flex text-right">
+            <div className="hidden flex-row items-center space-x-6 lg:flex text-right">
               {/* <!-- Language & Currency - Start --> */}
-              <div class="nk-lang-currency">
-                <div class="nk-lang-currency-link border border-white rounded-pill">
-                  <i class="fa-brands fa-facebook"></i>
+              <div className="nk-lang-currency">
+                <div className="nk-lang-currency-link border border-white rounded-pill">
+                  <i className="fa-brands fa-facebook"></i>
                 </div>
-                <div class="nk-lang-currency-link border border-white rounded-pill">
-                  <i class="fa-solid fa-envelope"></i>
+                <div className="nk-lang-currency-link border border-white rounded-pill">
+                  <i className="fa-solid fa-envelope"></i>
                 </div>
-                <div class="nk-lang-currency-link border border-white rounded-pill">
-                  <i class="fa-brands fa-tiktok"></i>
-                </div>
-
-                <div class="nk-lang-currency-link border border-white rounded-pill">
-                  <i class="fa-brands fa-whatsapp"></i>
+                <div className="nk-lang-currency-link border border-white rounded-pill">
+                  <i className="fa-brands fa-tiktok"></i>
                 </div>
 
-                <div class="nk-lang-currency-link border border-white rounded-pill">
-                  <i class="fa-solid fa-phone"></i>
+                <div className="nk-lang-currency-link border border-white rounded-pill">
+                  <i className="fa-brands fa-whatsapp"></i>
+                </div>
+
+                <div className="nk-lang-currency-link border border-white rounded-pill">
+                  <i className="fa-solid fa-phone"></i>
                 </div>
               </div>
             </div>
@@ -90,7 +90,7 @@ export default function Header() {
                   <div className="relative">
                     <input type="text" className="nk-input-container rounded-pill nk-search-main" placeholder="ຄົ້ນຫາຂໍ້ມູມ ..." />
                     <div className="nk-input-icon-right">
-                      <button type="button" class="bg-danger hover:bg-danger-800 focus:ring-danger-300 rounded-full py-2 px-3 text-center text-xs font-medium text-white focus:ring-4" >
+                      <button type="button" className="bg-danger hover:bg-danger-800 focus:ring-danger-300 rounded-full py-2 px-3 text-center text-xs font-medium text-white focus:ring-4" >
                         <i className="fa-solid fa-magnifying-glass" /> ຄົ້ນຫາ
                       </button>
                     </div>
@@ -127,7 +127,7 @@ export default function Header() {
 
 
                 <div className="nk-dropdown-slide group ">
-                  <Link to={'/profile'} className="nk-main-nav text-gray-600 !py-4">
+                  <Link to={'/'} className="nk-main-nav text-gray-600 !py-4">
                     <div className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-red text-center text-lg" >
                       <i className="fas fa-user"></i>
                     </div>
@@ -144,46 +144,46 @@ export default function Header() {
         </div>
         <div className="nk-border-separator"></div>
         <div id="bottomBar" className="nk-main-header " >
-          <div class="nk-header-container">
-            <div class="nk-left-nav">
-              <div class="nk-nav-padding">
-                <span><i class="fas fas fa-map-marker-alt"></i></span>
-                <Link class="nk-cat-hover-underline " to={'/'}> ທີ່ຢູ່ຮ້ານຄຳ ນາງວຽງຄຳ </Link>
+          <div className="nk-header-container">
+            <div className="nk-left-nav">
+              <div className="nk-nav-padding">
+                <span><i className="fas fas fa-map-marker-alt"></i></span>
+                <Link className="nk-cat-hover-underline " to={'/'}> ທີ່ຢູ່ຮ້ານຄຳ ນາງວຽງຄຳ </Link>
               </div>
-              <div class="nk-nav-padding fs-16px"><Link class="nk-cat-hover-underline" to='/'>ໜ້າຫຼັກ</Link></div>
+              <div className="nk-nav-padding fs-16px"><Link className="nk-cat-hover-underline" to='/'>ໜ້າຫຼັກ</Link></div>
 
-              <div data-dropdown="#pages-dropdown" class="nk-dropdown-slide hover:underline">
-                <div class="nk-dropdown-menu-link text-white hover:underline fs-16px">
+              <div data-dropdown="#pages-dropdown" className="nk-dropdown-slide hover:underline">
+                <div className="nk-dropdown-menu-link text-white hover:underline fs-16px">
                   <span className='me-2'>ປະເພດສິນຄ້າ</span>
-                  <span><i class="fas fa-chevron-down"></i></span>
+                  <span><i className="fas fa-chevron-down"></i></span>
                 </div>
-                <div id="pages-dropdown" class="nk-dropdown_menu nk-dropdown-menu-animated w-[250px]">
-                  <span class="nk-top-dropdown-triangle -left-[187px]"></span>
-                  <div class="nk-dropdown-content">
+                <div id="pages-dropdown" className="nk-dropdown_menu nk-dropdown-menu-animated w-[250px]">
+                  <span className="nk-top-dropdown-triangle -left-[187px]"></span>
+                  <div className="nk-dropdown-content">
                     {itemTiles.map((item, index) =>
-                      <Link class="nk-dropdown-nav-link fs-16px" to={'/pdc?p=' + item.tile_uuid}><i class="fa-solid fa-angle-right me-2" /> {item.tile_name}</Link>
+                      <Link className="nk-dropdown-nav-link fs-16px" to={'/pdc?p=' + item.tile_uuid}><i className="fa-solid fa-angle-right me-2" /> {item.tile_name}</Link>
                     )}
                   </div>
                 </div>
               </div>
-              <div class="nk-nav-padding fs-16px"><Link class="nk-cat-hover-underline" to='/product'>ສິນຄ້າທັງໝົດ</Link></div>
-              <div class="nk-nav-padding fs-16px"><Link class="nk-cat-hover-underline" to={'/recomend'}>ສິນຄ້າແນະນຳ</Link></div>
-              <div class="nk-nav-padding fs-16px"><Link class="nk-cat-hover-underline" to={'/news'}>ຂ່າວສານ</Link></div>
-              <div class="nk-nav-padding fs-16px"><Link class="nk-cat-hover-underline" to={'/gift'}>ຂອງຂວັນ</Link></div>
-              <div class="nk-nav-padding fs-16px"><Link class="nk-cat-hover-underline" to={'/promotion'}>ໂປຣໂມຊັນ</Link></div>
-              <div data-dropdown="#pages-dropdown" class="nk-dropdown-slide hover:underline">
-                <div class="nk-dropdown-menu-link text-white hover:underline fs-16px">
+              <div className="nk-nav-padding fs-16px"><Link className="nk-cat-hover-underline" to='/product'>ສິນຄ້າທັງໝົດ</Link></div>
+              <div className="nk-nav-padding fs-16px"><Link className="nk-cat-hover-underline" to={'/recomend'}>ສິນຄ້າແນະນຳ</Link></div>
+              <div className="nk-nav-padding fs-16px"><Link className="nk-cat-hover-underline" to={'/news'}>ຂ່າວສານ</Link></div>
+              <div className="nk-nav-padding fs-16px"><Link className="nk-cat-hover-underline" to={'/gift'}>ຂອງຂວັນ</Link></div>
+              <div className="nk-nav-padding fs-16px"><Link className="nk-cat-hover-underline" to={'/promotion'}>ໂປຣໂມຊັນ</Link></div>
+              <div data-dropdown="#pages-dropdown" className="nk-dropdown-slide hover:underline">
+                <div className="nk-dropdown-menu-link text-white hover:underline fs-16px">
                   <span className='me-2'>ບໍລິການອື່ນໆ</span>
-                  <span><i class="fas fa-chevron-down"></i></span>
+                  <span><i className="fas fa-chevron-down"></i></span>
                 </div>
-                <div id="pages-dropdown" class="nk-dropdown_menu nk-dropdown-menu-animated w-[250px]">
-                  <span class="nk-top-dropdown-triangle -left-[187px]"></span>
-                  <div class="nk-dropdown-content">
-                    <Link class="nk-dropdown-nav-link" to={'/pattern'}><i class="fa-solid fa-angle-right" /> ລວມລາຍປະຈຳຮ້ານ</Link>
-                    <Link class="nk-dropdown-nav-link" to={'/job'}><i class="fa-solid fa-angle-right" /> ຮ້ບສະໝັກງານ</Link>
-                    <Link class="nk-dropdown-nav-link" to={'/policy'}><i class="fa-solid fa-angle-right" /> ນະໂຍບາຍປະຈຳຮ້ານ</Link>
-                    <Link class="nk-dropdown-nav-link" to={'/checkbuy'}><i class="fa-solid fa-angle-right" /> ກວດສອບການສັ່ງຊື້</Link>
-                    <Link class="nk-dropdown-nav-link" to={'/about'}><i class="fa-solid fa-angle-right" /> ກຽວກັບຮ້ານຄຳ ນາງວຽງຄຳ</Link>
+                <div id="pages-dropdown" className="nk-dropdown_menu nk-dropdown-menu-animated w-[250px]">
+                  <span className="nk-top-dropdown-triangle -left-[187px]"></span>
+                  <div className="nk-dropdown-content">
+                    <Link className="nk-dropdown-nav-link" to={'/pattern'}><i className="fa-solid fa-angle-right" /> ລວມລາຍປະຈຳຮ້ານ</Link>
+                    <Link className="nk-dropdown-nav-link" to={'/job'}><i className="fa-solid fa-angle-right" /> ຮ້ບສະໝັກງານ</Link>
+                    <Link className="nk-dropdown-nav-link" to={'/policy'}><i className="fa-solid fa-angle-right" /> ນະໂຍບາຍປະຈຳຮ້ານ</Link>
+                    <Link className="nk-dropdown-nav-link" to={'/checkbuy'}><i className="fa-solid fa-angle-right" /> ກວດສອບການສັ່ງຊື້</Link>
+                    <Link className="nk-dropdown-nav-link" to={'/about'}><i className="fa-solid fa-angle-right" /> ກຽວກັບຮ້ານຄຳ ນາງວຽງຄຳ</Link>
                   </div>
                 </div>
               </div>
@@ -510,7 +510,7 @@ export default function Header() {
                 <div className="nk-sticky-input ">
                   <input type="text" className="nk-input-container pr-10 rounded-pill" placeholder="ຄົ້ນຫາ..." autocomplete="off" />
                   <div className="nk-magnify-icon">
-                    <button type="button" class="bg-danger  rounded-full py-2 px-3 text-center text-xs font-medium text-white focus:ring-4" >
+                    <button type="button" className="bg-danger  rounded-full py-2 px-3 text-center text-xs font-medium text-white focus:ring-4" >
                       ຄົ້ນຫາ
                     </button>
                   </div>
